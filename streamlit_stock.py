@@ -148,4 +148,4 @@ try:
 	pass
 except Exception as e:
 	st.error(f'Please put the ticker of your stock !')
-	st.write(e)
+
