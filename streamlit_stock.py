@@ -115,7 +115,7 @@ try:
 			st.write(data_finance.cashflow)
 
 		st.subheader('Net and Gross Income Statement')
-		st.pyplot(fig, transparent=True)
+		st.pyplot(fig, transparent=False)
 
 	#Talbleau pour afficher la dette totale de l'entprise
 	# Utiliser le style 'dark_background'
@@ -144,7 +144,7 @@ try:
 			data_finance = yf.Ticker(text_isin)
 			st.write(data_finance.income_stmt)
 		st.subheader('Total Debt Graphic')
-		st.pyplot(fig_2, transparent=True)
+		st.pyplot(fig_2, transparent=False)
 	pass
 except Exception as e:
 	st.error(f'Please put the ticker of your stock !')
